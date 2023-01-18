@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>Sticky Footer</title>
+    <link
+        rel="stylesheet"
+        href="Css/stickyFooter.css"
+    />
+</head>
+
+<body>
+    <main>
+        Here is a bunch of text but not enough to push the footer to the
+        bottom of the page.
+        Take a look at that in the browser, and test it by adding more content into main. You’ll see that when there is
+        not enough content, the footer is stuck to the bottom of the viewport. When there is enough, it sits below the
+        content.
+
+        This works because our flex property is set to grow where space is available. As our body is a flex container of
+        100% minimum height, the main content can grow into all of that available space. Beautiful!
+
+        Changing the source order
+        Flexbox has the ability to re-order items. Prior to Flexbox, if you wanted to have something that came after
+        something else in the DOM appear before it instead, you were in for a rough time. However, Flexbox makes such
+        work trivial. Let’s have a look at how it works.
+    </main>
+    <footer>
+        I'd like this to be at the bottom and thanks to Flexbox I can be
+        put in my place!
+    </footer>
+
+</body>
+
+</html>

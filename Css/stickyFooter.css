@@ -1,0 +1,22 @@
+footer {
+  background-color: violet;
+  color: #fff;
+  padding: 1.5rem;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+main {
+  /* Push the footer to the bottom of the page */
+  flex: 1 0 auto;
+  color: #333;
+  padding: 0.6rem;
+}

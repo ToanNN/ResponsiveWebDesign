@@ -88,3 +88,22 @@ body {
 .last-item {
   margin-left: auto;
 }
+
+.testcontainer {
+  display: flex;
+  height: 200px;
+  width: 20%;
+  background-color: #025059;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.c-item {
+  background-color: #ffffff;
+}
+
+.alignself {
+  justify-self: start;
+  flex: 2 2 200px;
+}
