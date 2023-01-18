@@ -6,6 +6,8 @@
   grid-template-columns: 200px 200px;
   background-color: violet;
   outline: 2px solid blue;
+  grid-auto-rows: 200px;
+  grid-auto-columns: 200px;
 }
 
 .grid-item-1 {
