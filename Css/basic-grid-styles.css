@@ -1,4 +1,6 @@
 .my-first-grid {
+  /* inline-grid the grid width will be the content width
+grid the grid will take all available space */
   display: grid;
   gap: 10px;
 
