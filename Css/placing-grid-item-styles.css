@@ -1,0 +1,42 @@
+.container {
+  display: grid;
+  /* Specify the distance between tracks */
+  gap: 30px;
+  grid-auto-rows: 100px;
+  /* Auto add new rows */
+  /* dense try to fit new elements to existing rows */
+  grid-auto-flow: row dense;
+  /* Divide the available space to 4 even columns */
+  /* fr- flex fraction */
+  grid-template-columns: repeat(4, 1fr);
+  outline: 1px solid blue;
+  font-size: 28px;
+  font-family: sans-serif;
+}
+
+[class^="grid-item"] {
+  outline: 1px #f90 dashed;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+
+/* Span columns from the second one to the end */
+.grid-item3 {
+  grid-column: 2/-1;
+}
+
+.grid-item6 {
+  /* Span rows from the third row to the sixth row */
+  grid-row: 3/6;
+  grid-column: 3/5;
+}
+
+.grid-item17 {
+  /* From column 6 take the next 3 columns */
+  grid-row: 6 / span 3;
+  grid-column: 2/3;
+}
+.grid-item4 {
+  grid-row: 4 / 7;
+}
