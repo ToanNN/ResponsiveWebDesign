@@ -17,6 +17,7 @@
             border: 3px solid yellow;
         }
 
+        /* Not have */
         img:not([alt]),
         img[alt=""] {
             border: 3px solid red;
@@ -26,17 +27,47 @@
             border: 1px dashed blue;
         }
 
+        /* Contains */
         [data-ingredients*="cream"] {
             color: red;
         }
 
+        /* Ends with */
         [data-ingredients$="jam"] {
             color: violet;
+        }
+
+        /* the attributes have two values */
+        [data-activity-name="swimming"][data-location="indoor"] {
+            color: chartreuse;
         }
     </style>
 </head>
 
 <body>
+    <nav class="nav-Wrapper">
+        <a
+            href="/home"
+            class="nav-Link"
+        >Home</a>
+        <a
+            href="/About"
+            class="nav-Link"
+        >About</a>
+        <a
+            href="/Films"
+            class="nav-Link"
+        >Films</a>
+        <a
+            href="/Forum"
+            class="nav-Link"
+        >Forum</a>
+        <a
+            href="/Contact-Us"
+            class="nav-Link"
+        >Contact Us</a>
+    </nav>
+
     <img
         src="https://placeimg.com/640/480/any"
         alt="an inquisitive cat"
