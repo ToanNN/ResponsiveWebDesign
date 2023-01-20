@@ -41,6 +41,36 @@
         [data-activity-name="swimming"][data-location="indoor"] {
             color: chartreuse;
         }
+
+        .nav-Wrapper {
+            display: flex;
+        }
+
+        /* Push the last child to the right */
+        .nav-Link:last-child {
+            margin-left: auto;
+        }
+
+        .nav-Link:nth-child(odd) {
+            margin-right: 1rem;
+        }
+
+        span {
+            height: 2rem;
+            width: 2rem;
+            background-color: blue;
+            display: inline-block;
+        }
+
+        span:nth-child(2n+3) {
+            background-color: #f90;
+            border-radius: 50%;
+        }
+
+        .parent>.descendant {
+            font-weight: 200;
+            color: aqua;
+        }
     </style>
 </head>
 
@@ -110,6 +140,25 @@
     >
         Swimming
     </li>
+
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <div class="parent">
+        <div class="descendant child">
+            <div class="descendant grandchild">
+                NC I love you
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
