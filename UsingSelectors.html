@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>Using Selectors</title>
+    <style>
+        img[alt] {
+            border: 3px solid yellow;
+        }
+
+        img:not([alt]),
+        img[alt=""] {
+            border: 3px solid red;
+        }
+
+        [data-tofu] {
+            border: 1px dashed blue;
+        }
+
+        [data-ingredients*="cream"] {
+            color: red;
+        }
+
+        [data-ingredients$="jam"] {
+            color: violet;
+        }
+    </style>
+</head>
+
+<body>
+    <img
+        src="https://placeimg.com/640/480/any"
+        alt="an inquisitive cat"
+    />
+
+    <div data-tofu="Victoria Beo">
+        Victoria Beo is a special woman
+    </div>
+
+    <p data-ingredients="scones cream jam">Will I get selected?</p>
+    <p data-ingredients="scones cream jam">Will I get selected?</p>
+    <p data-ingredients="toast jam butter">Will I get selected?</p>
+    <p data-ingredients="jam toast butter">Will I get selected?</p>
+
+    <li
+        data-todo-type="exercise"
+        data-activity-name="running"
+        data-location="indoor"
+    >
+        Running
+    </li>
+    <li
+        data-todo-type="exercise"
+        data-activity-name="swimming"
+        data-location="indoor"
+    >
+        Swimming
+    </li>
+    <li
+        data-todo-type="exercise"
+        data-activity-name="cycling"
+        data-location="outdoor"
+    >
+        Cycling
+    </li>
+    <li
+        data-todo-type="exercise"
+        data-activity-name="swimming"
+        data-location="outdoor"
+    >
+        Swimming
+    </li>
+</body>
+
+</html>
